@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <title>Love Message</title>
   <style>
     body {
-    font-family: 'Dancing Script', cursive;
+      font-family: 'Dancing Script', cursive;
       height: 100vh;
       background-color: #f8f8f8;
       margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .message-container {
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
     }
 
     .love-container {
@@ -31,7 +38,39 @@
 
     p {
       color: #333;
-      font-size: 30px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .button {
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 100px;
+      background-color: #e74c3c;
+      background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+      box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      font-size: 16px;
+      border: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .button {
+        font-size: 14px;
+      }
     }
 
     @keyframes heartbeat {
@@ -39,45 +78,21 @@
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
     }
-.button {
-  color: #fff;
-  padding: 15px 25px;
-  border-radius: 100px;
-  background-color: #e74c3c;
-  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
-  font-size: 16px;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-
-  cursor: pointer;
-}
-.message-container {
-    text-align: center;
-}
   </style>
 </head>
 <body>
-    <section class="message-container">
-        <div class="love-container">
-            <h1>Hi Love!❤</h1> 
-            <h1>HAPPY VALENTINES DAY❤</h1>
-        </div>
-        <div>
-            <p>Di ko afford yung flowers but hope you like it🙈I just want to say that, <br> everytime we talk my hearts
-                fall inlove with you deeply. <br> Thank you for everything my love, to laugh me, to support, sa kulitan, asaran <br>
-                sa ups and downs andyan ka. Just remember always that I'm here to support you my love, <br> I'm not going anywhere
-                Mahal na mahal na mahal na mahal kita💕 <br> Love hindi lang pang isang araw yung LOVE ko ah, <br> KAHIT araw araw tayong ,mag celebrate e haha <br>
-                I already promise my self na ikaw at ikaw palagi, <br> wag mokong iwan ah, di ko kaya hehe, <br> Sasamahan kita hanggang sa pagtanda love pangako. <br>
-                We explore the world love. <br> ILOVEYOUSOMUCH!❤ HAPPY VALENTINES DAY!💕 MWUUAHHH!💋❤</p>
-                <a href="./flower.html"><button class="button">Click Love</button></a>
-        </div>
-    </section>
+  <section class="message-container">
+    <div class="love-container">
+      <h1>Hi Love!❤</h1> 
+      <h1>HAPPY VALENTINES DAY❤</h1>
+    </div>
+    <div>
+      <p>Di ko afford yung flowers but hope you like it🙈I just want to say that, <br> every time we talk my heart falls in love with you deeply. <br> Thank you for everything my love, for laughing with me, for supporting me, for the banter, <br>
+        for being there through ups and downs. Just remember always that I'm here to support you my love, <br> I'm not going anywhere. Mahal na mahal na mahal na mahal kita💕 <br> Love, my love for you is not just for one day, <br> we'll celebrate every day, even the ordinary ones. <br>
+        I've already promised myself that it's you and only you, don't leave me, I can't handle it hehe. <br> I'll be with you until we grow old love, that's a promise. <br> Let's explore the world together love. <br> ILOVEYOUSOMUCH!❤ HAPPY VALENTINES DAY!💕 MWUUAHHH!💋❤
+      </p>
+      <a href="./flower.html"><button class="button">Click Love</button></a>
+    </div>
+  </section>
 </body> 
 </html>
-
